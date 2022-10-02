@@ -8,5 +8,8 @@ sudo apt-get -y install haproxy
 # Make sure that HAproxy can be managed via an init script
 sudo sed -i -e '$aENABLED=1\n' /etc/default/haproxy
 
+# Setup load balancing frontend and backend options
 sudo sed -i -e '$a\listen http-in\n\tbind :80\n\tbalance roundrobin\n\tserver 525-web-01 35.231.216.93:80 check\n\tserver 525-web-02 35.196.0.213:80 check\n' /etc/haproxy/haproxy.cfg
+
+#restart hAproxy
 sudo service haproxy restart
