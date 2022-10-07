@@ -1,4 +1,3 @@
-# Web stack debugging #2
 ## Tasks :page_with_curl:
 
 * **0. Run software as another user**
