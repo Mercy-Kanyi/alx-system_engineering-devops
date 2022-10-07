@@ -1,7 +1,4 @@
 # Web stack debugging #2
-
-- Scripts that automate necessary web stack.
-
 ## Tasks :page_with_curl:
 
 * **0. Run software as another user**
